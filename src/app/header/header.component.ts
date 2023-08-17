@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   
-  constructor(private router: Router) { }
+  constructor(private router: Router, private auth: AuthService) { }
 
   ngOnInit(): void {
 
